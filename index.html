@@ -25,24 +25,24 @@ h2{color:var(--g);margin:18px 0 8px}
 <header><h1>🌴 Onze villa in Krabi</h1><p id="upd">Laden…</p></header>
 <main><div class="bar"><select id="sort"><option value="score">Beste match</option><option value="pa">Prijs laag → hoog</option><option value="pd">Prijs hoog → laag</option></select>
 <select id="f"><option value="">Alle statussen</option><option value="act">Zonder afgevallen</option><option>nieuw</option><option>shortlist</option><option>bezichtigen</option><option>afgevallen</option></select>
-<select id="pet"><option value="">Alle</option><option value="1">Alleen huisdieren OK</option></select></div>
+</div>
 <div id="top"></div><div id="all"></div></main>
 <footer>Bijgewerkt door de Krabi Villa Scout · prijzen indicatief, check altijd de advertentie</footer>
 <script>
 const eur=n=>'€ '+Math.round(n).toLocaleString('nl-NL'),thb=n=>'฿ '+Math.round(n).toLocaleString('nl-NL');
 let D;fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
-['sort','f','pet'].forEach(i=>document.getElementById(i).onchange=render);
+['sort','f'].forEach(i=>document.getElementById(i).onchange=render);
 const petOK=v=>v.pets&&!/niet toegestaan|not allowed|nee/i.test(v.pets)&&!/niet vermeld/i.test(v.pets);
 function card(v){const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null),t=v.price_thb??(v.price_eur&&D.eur_thb?v.price_eur*D.eur_thb:null);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 return `<div class="card ${v.top3?'top':''} ${esc(v.status)}"><div class="ph">${v.photo_url?`<img loading="lazy" src="${esc(v.photo_url)}" alt="">`:'🏡'}</div><div class="b">
 <span class="st ${esc(v.status)}">${esc(v.status)}</span><div class="n">${esc(v.name)}</div><div class="a">📍 ${esc(v.area)}${v.source?' · '+esc(v.source):''}</div>
 <div class="p">${e?eur(e):'?'} <small>/ maand ${t?'· '+thb(t):''}</small></div>
-<div class="tags"><span class="tag">🛏 ${v.bedrooms??'?'} slpk</span>${v.bathrooms?`<span class="tag">🛁 ${v.bathrooms}</span>`:''}<span class="tag">🏊 ${v.private_pool?'Privézwembad':'Geen privézwembad'}</span><span class="tag">🐾 ${esc(v.pets||'?')}</span><span class="tag">📶 ${esc(v.internet||'?')}</span></div>
+<div class="tags"><span class="tag">🛏 ${v.bedrooms??'?'} slpk</span>${v.bathrooms?`<span class="tag">🛁 ${v.bathrooms}</span>`:''}<span class="tag">🏊 ${v.private_pool?'Privézwembad':'Geen privézwembad'}</span><span class="tag">📅 ${v.six_month_ok?'6 mnd kan'+(v.six_month_price_thb?' ('+thb(v.six_month_price_thb)+')':''):'Alleen 1 jaar'}</span><span class="tag">📶 ${esc(v.internet||'?')}</span></div>
 <div class="notes">${esc(v.notes)}</div>${v.url?`<a class="l" href="${esc(v.url)}" target="_blank" rel="noopener">Bekijk advertentie →</a>`:''}</div></div>`}
 function render(){const u=D.updated_at?new Date(D.updated_at):null;document.getElementById('upd').textContent='Laatst bijgewerkt: '+(u?u.toLocaleString('nl-NL',{dateStyle:'long',timeStyle:'short'}):'onbekend');
 let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value;
-if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);if(pet.value)vs=vs.filter(petOK);
+if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
 const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
 document.getElementById('top').innerHTML=top.length?'<h2>⭐ Top 3</h2><div class="grid">'+top.map(card).join('')+'</div>':'';

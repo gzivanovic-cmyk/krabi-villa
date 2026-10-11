@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-11T10:20:00+02:00",
+  "updated_at": "2026-10-11T10:30:00+02:00",
   "eur_thb": 37.6,
   "message": null,
   "villas": [
@@ -12,15 +12,16 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "private_pool": true,
-      "pets": "Katten en honden (alleen klein)",
       "internet": "Niet vermeld",
-      "notes": "400 m² binnen, perceel 500 m², 10×4 m privézwembad, weelderige tuin, buitenkeuken + BBQ. Jaarcontract ฿90.000; 3–6 maanden ฿120.000. ~2 km van Ao Nang Beach. Check of grote hond OK is.",
+      "notes": "400 m² binnen, perceel 500 m², 10×4 m privézwembad, weelderige tuin, buitenkeuken + BBQ. 6 maanden kan: ฿120.000/mnd (≈ €3.190, net boven max €3.000); jaarcontract ฿90.000. ~2 km van Ao Nang Beach.",
       "status": "shortlist",
       "url": "https://www.kaibaanthai.com/en/property-rent/4-bedroom-villa-for-rent-in-ao-nang-krabi-u6774150",
       "photo_url": "img/kbt-u6774150.jpg",
       "source": "Kaibaanthai",
-      "score": 85,
-      "top3": true
+      "score": 78,
+      "top3": true,
+      "six_month_ok": true,
+      "six_month_price_thb": 120000
     },
     {
       "id": "dot-47d989eb",
@@ -31,15 +32,16 @@
       "bedrooms": 4,
       "bathrooms": 4,
       "private_pool": true,
-      "pets": "Niet vermeld – navragen",
       "internet": "Inbegrepen",
-      "notes": "220 m², groot zwembad, balkon per slaapkamer. Alleen 1-jarig contract, 6 maanden vooruit + borg. 8 min naar strand, 15 min naar Krabi International School.",
+      "notes": "220 m², groot zwembad, balkon per slaapkamer. Minpunt: alleen 1-jarig contract, 6 maanden vooruit + borg. Internet en zwembadonderhoud inbegrepen. 8 min naar strand.",
       "status": "nieuw",
       "url": "https://www.dotproperty.co.th/en/ads/4-bedroom-villa-for-rent-in-ao-nang-krabi_47d989eb16f5-5c51-2a75-2425-ef2f9e57",
       "photo_url": "img/dot-47d989eb.jpg",
       "source": "Dot Property",
-      "score": 75,
-      "top3": true
+      "score": 70,
+      "top3": true,
+      "six_month_ok": false,
+      "six_month_price_thb": null
     },
     {
       "id": "faz-u1750678",
@@ -50,15 +52,16 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "private_pool": false,
-      "pets": "Katten en honden (alleen klein)",
       "internet": "Niet vermeld",
-      "notes": "250 m², perceel 400 m², grote buitenruimte/speelplek. Zwembad lijkt gedeeld (resort-faciliteiten) – navragen. Min. 1 jaar.",
+      "notes": "250 m², perceel 400 m², grote buitenruimte. Zwembad lijkt gedeeld. Minpunt: min. 1 jaar. Let op: advertentie gaf op 11 okt een 404, mogelijk offline.",
       "status": "nieuw",
       "url": "https://www.fazwaz.co.th/en/property-rent/4-bedroom-house-for-rent-at-ao-nang-garden-villa-in-ao-nang-krabi-u1750678",
       "photo_url": null,
       "source": "FazWaz",
-      "score": 65,
-      "top3": true
+      "score": 45,
+      "top3": false,
+      "six_month_ok": false,
+      "six_month_price_thb": null
     },
     {
       "id": "kbt-u6565250",
@@ -69,15 +72,16 @@
       "bedrooms": 4,
       "bathrooms": 5,
       "private_pool": true,
-      "pets": "Niet toegestaan",
       "internet": "Wifi inbegrepen",
-      "notes": "260 m², nieuw (jan 2026), dakterras, wekelijks schoonmaak/tuin/zwembad. Beschikbaar vanaf 30 nov 2026, min. 1 jaar. Afgevallen: geen huisdieren.",
-      "status": "afgevallen",
+      "notes": "260 m², nieuw (jan 2026), dakterras, wekelijks schoonmaak/tuin/zwembad inbegrepen, wifi inbegrepen. ≈ €2.660 (binnen uitzondering). Minpunt: alleen 1-jarig, beschikbaar vanaf 30 nov 2026.",
+      "status": "nieuw",
       "url": "https://www.kaibaanthai.com/en/property-rent/4-bedroom-villa-for-rent-in-ao-nang-krabi-u6565250",
       "photo_url": "img/kbt-u6565250.jpg",
       "source": "Kaibaanthai",
-      "score": 40,
-      "top3": false
+      "score": 62,
+      "top3": true,
+      "six_month_ok": false,
+      "six_month_price_thb": null
     },
     {
       "id": "dot-3843d74b",
@@ -88,15 +92,16 @@
       "bedrooms": 4,
       "bathrooms": 3,
       "private_pool": true,
-      "pets": "Niet toegestaan",
       "internet": "Inbegrepen",
-      "notes": "304 m², 13×4 m overloopzwembad, veel privacy. Min. 1 jaar. Afgevallen: geen huisdieren en boven budget.",
-      "status": "afgevallen",
+      "notes": "304 m², 13×4 m overloopzwembad, bergzicht, veel privacy; internet, tuin, zwembad en schoonmaak inbegrepen. ≈ €2.925 (net binnen uitzondering). Minpunt: alleen 1-jarig.",
+      "status": "nieuw",
       "url": "https://www.dotproperty.co.th/en/ads/4-bedroom-villa-for-rent-in-ao-nang-krabi_3843d74beef4-1ba1-9982-0d0d-b180e089",
       "photo_url": "img/dot-3843d74b.jpg",
       "source": "Dot Property",
-      "score": 30,
-      "top3": false
+      "score": 55,
+      "top3": false,
+      "six_month_ok": false,
+      "six_month_price_thb": null
     }
   ]
 }

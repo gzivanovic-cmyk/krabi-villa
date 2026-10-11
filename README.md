@@ -11,7 +11,7 @@ Top-level:
   - `price_thb` / `price_eur` (number|null, per maand)
   - `bedrooms`, `bathrooms` (number|null)
   - `private_pool` (bool)
-  - `pets` (string, bv. "Katten en honden", "Niet toegestaan", "Niet vermeld – navragen")
+  - `six_month_ok` (bool) – 6-maandscontract mogelijk · `six_month_price_thb` (number|null) – maandprijs bij 6 maanden
   - `internet` (string)
   - `notes` (string, Nederlands)
   - `status`: `nieuw` | `shortlist` | `bezichtigen` | `afgevallen`
