@@ -1,5 +1,5 @@
 <!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Onze villa in Krabi</title><meta name="robots" content="noindex">
+<title>Onze villa in Krabi</title><meta name="robots" content="noindex"><meta http-equiv="Cache-Control" content="no-cache">
 <style>
 :root{--g:#1f6f5c;--s:#f6efe3;--o:#e07a3f;--t:#2b2b2b}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--s);color:var(--t)}
@@ -33,7 +33,6 @@ h2{color:var(--g);margin:18px 0 8px}
 const eur=n=>'€ '+Math.round(n).toLocaleString('nl-NL'),thb=n=>'฿ '+Math.round(n).toLocaleString('nl-NL');
 let D;fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
 ['sort','f','ty'].forEach(i=>document.getElementById(i).onchange=render);
-const petOK=v=>v.pets&&!/niet toegestaan|not allowed|nee/i.test(v.pets)&&!/niet vermeld/i.test(v.pets);
 function card(v){const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null),t=v.price_thb??(v.price_eur&&D.eur_thb?v.price_eur*D.eur_thb:null);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 return `<div class="card ${v.top3?'top':''} ${esc(v.status)}"><div class="ph">${v.photo_url?`<img loading="lazy" src="${esc(v.photo_url)}" alt="">`:((v.type||'huis')==='resort'?'🏨':'🏡')}</div><div class="b">
