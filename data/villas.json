@@ -21,7 +21,8 @@
       "score": 78,
       "top3": true,
       "six_month_ok": true,
-      "six_month_price_thb": 120000
+      "six_month_price_thb": 120000,
+      "type": "huis"
     },
     {
       "id": "dot-47d989eb",
@@ -41,7 +42,8 @@
       "score": 70,
       "top3": false,
       "six_month_ok": false,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "faz-u1750678",
@@ -61,7 +63,8 @@
       "score": 45,
       "top3": false,
       "six_month_ok": false,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "kbt-u6565250",
@@ -81,7 +84,8 @@
       "score": 62,
       "top3": false,
       "six_month_ok": false,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "dot-3843d74b",
@@ -101,7 +105,8 @@
       "score": 55,
       "top3": false,
       "six_month_ok": false,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "mdp-poolvilla-75k",
@@ -121,7 +126,8 @@
       "score": 80,
       "top3": true,
       "six_month_ok": true,
-      "six_month_price_thb": 75000
+      "six_month_price_thb": 75000,
+      "type": "huis"
     },
     {
       "id": "mdp-marigold-70k",
@@ -141,7 +147,8 @@
       "score": 82,
       "top3": true,
       "six_month_ok": true,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "k4r-klongmuang-35k",
@@ -161,7 +168,8 @@
       "score": 72,
       "top3": false,
       "six_month_ok": true,
-      "six_month_price_thb": null
+      "six_month_price_thb": null,
+      "type": "huis"
     },
     {
       "id": "tgp-u6136868",
@@ -181,7 +189,8 @@
       "score": 66,
       "top3": false,
       "six_month_ok": true,
-      "six_month_price_thb": 100000
+      "six_month_price_thb": 100000,
+      "type": "huis"
     },
     {
       "id": "kgr-jampoon",
@@ -201,7 +210,8 @@
       "score": 60,
       "top3": false,
       "six_month_ok": true,
-      "six_month_price_thb": 45000
+      "six_month_price_thb": 45000,
+      "type": "huis"
     }
   ]
 }
