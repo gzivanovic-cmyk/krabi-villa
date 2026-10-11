@@ -14,6 +14,7 @@ Top-level:
   - `six_month_ok` (bool) – 6-maandscontract mogelijk · `six_month_price_thb` (number|null) – maandprijs bij 6 maanden
   - `internet` (string)
   - `notes` (string, Nederlands)
+  - `type`: `huis` | `resort` (filter op de site; ontbreekt = huis)
   - `status`: `nieuw` | `shortlist` | `bezichtigen` | `afgevallen`
   - `url` (string, echte advertentie-URL) · `photo_url` (string|null) · `source` (string, site-naam)
   - `score` (0–100, sortering "Beste match") · `top3` (bool, max 3 op true)
