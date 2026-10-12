@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-12T20:04:52+02:00",
+ "updated_at": "2026-10-12T20:56:26+02:00",
  "villas": {
   "kbt-u6774150": {
    "loc": {
@@ -9,16 +9,6 @@
     "bron": "geen exacte pin in advertentie; centrum Ao Nang (benadering)"
    },
    "items": [
-    {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
     {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
@@ -47,16 +37,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -65,7 +50,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -166,6 +167,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -307,16 +318,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 13.7,
-     "min": 21,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 16.7,
@@ -343,7 +344,11 @@
      "min": 3,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
@@ -356,11 +361,14 @@
     },
     {
      "cat": "gym",
-     "name": "Push Gym",
-     "km": 1.2,
-     "min": 2,
+     "name": "Aonang Muay Thai Boxing Stadium and Gym",
+     "km": 2.2,
+     "min": 4,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.032970,98.825189",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -465,6 +473,16 @@
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 13.7,
+     "min": 21,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Ao Nang Beach (หาดอ่าวนาง)",
      "km": 0.8,
@@ -502,7 +520,7 @@
     },
     {
      "cat": "supermarkt",
-     "name": "Mother Marche",
+     "name": "Mother Marche (Soi Ao Nang 15 / ซอยอ่าวนาง 15)",
      "km": 1.4,
      "min": 2,
      "mode": "auto",
@@ -511,7 +529,7 @@
     },
     {
      "cat": "supermarkt",
-     "name": "Mother Marche",
+     "name": "Mother Marche (Ban Khlong Haeng / บ้านคลองแห้ง)",
      "km": 2.5,
      "min": 4,
      "mode": "auto",
@@ -520,7 +538,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Khlong Haeng Road / ถนนคลองแห้ง)",
      "km": 0.4,
      "min": 5,
      "mode": "lopen",
@@ -529,7 +547,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Soi Ao Nang 17 / ซอยอ่าวนาง 17)",
      "km": 0.6,
      "min": 8,
      "mode": "lopen",
@@ -604,16 +622,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 10.8,
-     "min": 16,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 12.4,
@@ -640,25 +648,36 @@
      "min": 3,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.054820,98.838630",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
-     "name": "Get Well Fitness Aonang",
-     "km": 0.3,
-     "min": 4,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Yaksha Fitness (Ao Nang)",
-     "km": 1.8,
-     "min": 5,
+     "name": "E.N. Muaythai Gym (Ao Nang)",
+     "km": 1.1,
+     "min": 3,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.058940,98.852690",
+     "url": "https://enmuaythaigym.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 5.1,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -759,6 +778,16 @@
      "min": 6,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 10.8,
+     "min": 16,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -899,16 +928,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -936,16 +955,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -954,7 +968,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -1055,6 +1085,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -1196,16 +1236,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -1233,16 +1263,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -1251,7 +1276,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -1352,6 +1393,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -1493,16 +1544,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.6,
-     "min": 21,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 11.6,
@@ -1524,31 +1565,41 @@
     },
     {
      "cat": "gym",
+     "name": "E.N. Muaythai Gym (Ao Nang)",
+     "km": 0.7,
+     "min": 9,
+     "mode": "lopen",
+     "url": "https://enmuaythaigym.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "sub": [
+      "muaythai"
+     ],
+     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
      "name": "Yaksha Fitness (Ao Nang)",
      "km": 0.9,
      "min": 3,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.058940,98.852690",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
-     "name": "Honour Muay Thai (Ao Nang)",
-     "km": 1.3,
-     "min": 3,
+     "name": "Heroic Fitness",
+     "km": 6.9,
+     "min": 11,
      "mode": "auto",
-     "url": "http://www.honourmuaythai.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.045460,98.852060",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "P.U.S.H Fitness Center (Ao Nang)",
-     "km": 2.0,
-     "min": 5,
-     "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.054820,98.838630",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -1652,6 +1703,16 @@
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.6,
+     "min": 21,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Ao Nang Beach (หาดอ่าวนาง)",
      "km": 5.7,
@@ -1707,7 +1768,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Soi Ao Nang 5 / ซอยอ่าวนาง 5)",
      "km": 3.6,
      "min": 7,
      "mode": "auto",
@@ -1716,7 +1777,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Ban Ao Nam Mao / บ้านอ่าวน้ำเมา)",
      "km": 3.6,
      "min": 6,
      "mode": "auto",
@@ -1789,16 +1850,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 11.1,
-     "min": 19,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 19.8,
@@ -1825,6 +1876,9 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053388,98.761045",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -1834,16 +1888,23 @@
      "min": 10,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052755,98.757126",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
-     "name": "Aonang Muay Thai Boxing Stadium and Gym",
-     "km": 6.5,
-     "min": 12,
+     "name": "Heroic Fitness",
+     "km": 7.7,
+     "min": 14,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -1947,6 +2008,16 @@
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 11.1,
+     "min": 19,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Pan Beach",
      "km": 4.1,
@@ -2002,7 +2073,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Klong Mung Road)",
      "km": 5.2,
      "min": 8,
      "mode": "auto",
@@ -2011,7 +2082,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Ban Khlong Haeng / บ้านคลองแห้ง)",
      "km": 5.8,
      "min": 10,
      "mode": "auto",
@@ -2086,16 +2157,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -2123,16 +2184,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -2141,7 +2197,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -2242,6 +2314,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -2383,16 +2465,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 13.2,
-     "min": 22,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 21.9,
@@ -2419,6 +2491,9 @@
      "min": 5,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052755,98.757126",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
@@ -2428,16 +2503,23 @@
      "min": 5,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053388,98.761045",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
-     "name": "Aonang Muay Thai Boxing Stadium and Gym",
-     "km": 8.6,
-     "min": 15,
+     "name": "Heroic Fitness",
+     "km": 9.8,
+     "min": 17,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -2541,6 +2623,16 @@
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 13.2,
+     "min": 22,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Klong Muang Beach (หาดคลองม่วง)",
      "km": 1.1,
@@ -2596,7 +2688,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Klong Mung Road)",
      "km": 0.1,
      "min": 1,
      "mode": "lopen",
@@ -2605,7 +2697,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (route KB 4024 / กบ.4024)",
      "km": 1.5,
      "min": 2,
      "mode": "auto",
@@ -2680,16 +2772,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -2717,16 +2799,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -2735,7 +2812,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -2836,6 +2929,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -2977,16 +3080,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 13.0,
-     "min": 19,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.6,
@@ -3014,16 +3107,11 @@
      "mode": "auto",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 1.1,
-     "min": 1,
-     "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
@@ -3032,7 +3120,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 4.0,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -3133,6 +3237,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 13.0,
+     "min": 19,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -3274,16 +3388,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 13.2,
-     "min": 22,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 21.9,
@@ -3310,6 +3414,9 @@
      "min": 5,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052755,98.757126",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
@@ -3319,16 +3426,23 @@
      "min": 5,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053388,98.761045",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
-     "name": "Aonang Muay Thai Boxing Stadium and Gym",
-     "km": 8.6,
-     "min": 15,
+     "name": "Heroic Fitness",
+     "km": 9.8,
+     "min": 17,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -3432,6 +3546,16 @@
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 13.2,
+     "min": 22,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Klong Muang Beach (หาดคลองม่วง)",
      "km": 1.1,
@@ -3487,7 +3611,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Klong Mung Road)",
      "km": 0.1,
      "min": 1,
      "mode": "lopen",
@@ -3496,7 +3620,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (route KB 4024 / กบ.4024)",
      "km": 1.5,
      "min": 2,
      "mode": "auto",
@@ -3571,16 +3695,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 10.2,
-     "min": 15,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 13.2,
@@ -3607,6 +3721,9 @@
      "min": 3,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -3616,16 +3733,23 @@
      "min": 4,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.054820,98.838630",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
-     "name": "Get Well Fitness Aonang",
+     "name": "Heroic Fitness",
      "km": 3.3,
-     "min": 4,
+     "min": 6,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -3729,6 +3853,16 @@
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 10.2,
+     "min": 15,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
      "cat": "strand",
      "name": "Ao Nang Beach (หาดอ่าวนาง)",
      "km": 3.9,
@@ -3784,7 +3918,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Ban Khlong Haeng / บ้านคลองแห้ง)",
      "km": 1.8,
      "min": 2,
      "mode": "auto",
@@ -3793,7 +3927,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (Ban Na Tin / บ้านนาตีน)",
      "km": 1.9,
      "min": 3,
      "mode": "auto",
@@ -3866,16 +4000,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -3903,16 +4027,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -3921,7 +4040,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -4022,6 +4157,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -4163,16 +4308,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 11.3,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging soi-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 12.9,
@@ -4199,25 +4334,36 @@
      "min": 9,
      "mode": "lopen",
      "url": "https://www.google.com/maps/search/?api=1&query=8.054820,98.838630",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
     },
     {
      "cat": "gym",
-     "name": "Get Well Fitness Aonang",
-     "km": 0.8,
-     "min": 11,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Yaksha Fitness (Ao Nang)",
-     "km": 1.6,
-     "min": 5,
+     "name": "E.N. Muaythai Gym (Ao Nang)",
+     "km": 0.9,
+     "min": 3,
      "mode": "auto",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.058940,98.852690",
+     "url": "https://enmuaythaigym.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "sub": [
+      "muaythai"
+     ],
      "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 5.6,
+     "min": 9,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
     },
     {
      "cat": "kinderen",
@@ -4318,6 +4464,16 @@
      "min": 9,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.081876,98.858919",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 11.3,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging soi-niveau"
     },
     {
@@ -4458,16 +4614,6 @@
    },
    "items": [
     {
-     "cat": "school",
-     "name": "Krabi International School (Nong Thale)",
-     "km": 12.4,
-     "min": 18,
-     "mode": "auto",
-     "url": "https://www.krabiinternationalschool.com/",
-     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
-     "note": "OSRM rijroute; villa-ligging wijk-niveau"
-    },
-    {
      "cat": "dans",
      "name": "Little Black Studio – dance & performance art (Krabi Town)",
      "km": 14.0,
@@ -4495,16 +4641,11 @@
      "mode": "lopen",
      "url": "https://overthetopkrabi.com/",
      "maps": "https://www.google.com/maps/search/?api=1&query=8.038453,98.836493",
+     "sub": [
+      "muaythai",
+      "mma"
+     ],
      "note": "Muay Thai; MMA en no-gi BJJ op wachtlijst; OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
-    },
-    {
-     "cat": "gym",
-     "name": "Knockout Muaythai Boxing Gym",
-     "km": 0.5,
-     "min": 7,
-     "mode": "lopen",
-     "url": "https://www.google.com/maps/search/?api=1&query=8.038917,98.833270",
-     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging wijk-niveau"
     },
     {
      "cat": "gym",
@@ -4513,7 +4654,23 @@
      "min": 2,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.053840,98.838180",
+     "sub": [
+      "fitness"
+     ],
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.4,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
      "cat": "kinderen",
@@ -4614,6 +4771,16 @@
      "min": 8,
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.4,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
     },
     {
@@ -4910,7 +5077,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (0.7 km)",
      "km": 0.7,
      "min": 9,
      "mode": "lopen",
@@ -4919,7 +5086,7 @@
     },
     {
      "cat": "winkel",
-     "name": "7-Eleven",
+     "name": "7-Eleven (1.3 km)",
      "km": 1.3,
      "min": 2,
      "mode": "auto",
