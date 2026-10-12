@@ -20,6 +20,7 @@ h2{color:var(--g);margin:18px 0 8px}
 .st{align-self:flex-start;border-radius:12px;padding:2px 10px;font-size:.78rem;font-weight:700;text-transform:uppercase;color:#fff}
 .st.nieuw{background:#3a86c8}.st.shortlist{background:var(--o)}.st.afgevallen{background:#999}.st.bezichtigen{background:#8a4fc0}.st.ty{background:#eef6f2;color:var(--g)}
 .notes{font-size:.9rem;line-height:1.4}a.l{margin-top:auto;text-align:center;background:var(--g);color:#fff;text-decoration:none;padding:10px;border-radius:10px}
+.nb{font-size:.86rem;background:#f7faf8;border-radius:10px;padding:6px 10px}.nb summary{cursor:pointer;font-weight:600;color:var(--g)}.nb .c{margin-top:6px}.nb .c b{display:block;font-size:.8rem;color:#555}.nb ul{margin:2px 0;padding-left:18px}.nb .x{color:#888;font-size:.78rem;margin-top:6px}
 .empty{background:#fff;padding:30px;border-radius:16px;text-align:center}footer{text-align:center;color:#888;font-size:.8rem;padding:24px}
 </style></head><body>
 <header><h1>🌴 Onze villa in Krabi</h1><p id="upd">Laden…</p></header>
@@ -27,23 +28,35 @@ h2{color:var(--g);margin:18px 0 8px}
 <select id="ty"><option value="">Huizen &amp; resorts</option><option value="huis">🏡 Alleen huizen</option><option value="resort">🏨 Alleen resorts</option></select>
 <select id="mp"><option value="">Elke prijs</option><option value="1500">Tot € 1.500</option><option value="2000">Tot € 2.000</option><option value="2500">Tot € 2.500</option><option value="3000">Tot € 3.000</option></select>
 <select id="bd"><option value="">Elke afstand tot strand</option><option value="5">Strand ≤ 5 min (of ≤ 2 km)</option><option value="10">Strand ≤ 10 min (of ≤ 4 km)</option></select>
+<select id="sm"><option value="">Supermarkt: elke afstand</option><option value="2">Supermarkt ≤ 2 km</option><option value="5">Supermarkt ≤ 5 km</option></select>
+<select id="zh"><option value="">Ziekenhuis: elke afstand</option><option value="5">Ziekenhuis ≤ 5 km</option><option value="10">Ziekenhuis ≤ 10 km</option><option value="20">Ziekenhuis ≤ 20 km</option></select>
+<select id="sc"><option value="">School: elke afstand</option><option value="5">School ≤ 5 km</option><option value="10">School ≤ 10 km</option></select>
 <select id="f"><option value="">Alle statussen</option><option value="act">Zonder afgevallen</option><option>nieuw</option><option>shortlist</option><option>bezichtigen</option><option>afgevallen</option></select>
 </div>
 <div id="top"></div><div id="all"></div></main>
 <footer>Bijgewerkt door de Krabi Villa Scout · prijzen indicatief, check altijd de advertentie</footer>
 <script>
 const eur=n=>'€ '+Math.round(n).toLocaleString('nl-NL'),thb=n=>'฿ '+Math.round(n).toLocaleString('nl-NL');
-let D;fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
-['sort','f','ty','mp','bd'].forEach(i=>document.getElementById(i).onchange=render);
+let D,NB={};fetch('data/nearby.json?'+Date.now()).then(r=>r.ok?r.json():{}).then(n=>{NB=(n&&n.villas)||{};if(D)render()}).catch(()=>{});
+fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
+['sort','f','ty','mp','bd','sm','zh','sc'].forEach(i=>document.getElementById(i).onchange=render);
+const CATS=[['strand','🏖 Strand'],['supermarkt','🛒 Supermarkt'],['ziekenhuis','🏥 Ziekenhuis'],['school','🎒 School'],['restaurant','🍽 Restaurant'],['gym','🏋 Gym'],['yoga','🧘 Yoga'],['dans','💃 Dans'],['winkel','🛍 Winkel'],['overig','📌 Overig']];
+const near=(id,c)=>{const n=NB[id];if(!n||!n.items)return null;const k=n.items.filter(i=>i.cat===c&&i.km!=null).map(i=>+i.km);return k.length?Math.min(...k):null};
+function nbBlock(v,esc){const n=NB[v.id];if(!n||!(n.items||[]).length)return '';const it=n.items;let h='';
+for(const [c,l] of CATS){const g=it.filter(i=>i.cat===c).sort((a,b)=>(a.km??1e9)-(b.km??1e9)).slice(0,3);if(!g.length)continue;
+h+=`<div class="c"><b>${l}</b><ul>`+g.map(i=>{const u=i.maps||i.url;const nm=u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(i.name)}</a>`:esc(i.name);
+return `<li${i.note?` title="${esc(i.note)}"`:''}>${nm} · ${i.km!=null?String(i.km).replace('.',',')+' km':'? km'}${i.min!=null?' · '+i.min+' min':''}${i.mode?' '+esc(i.mode):''}</li>`}).join('')+'</ul></div>'}
+const pr=n.loc&&n.loc.precisie;return `<details class="nb"><summary>📍 In de buurt</summary>${h}<div class="x">Afstanden zijn indicatief: villa-locatie is benaderd op ${pr==='soi'?'straat (soi)':pr==='wijk'?'wijk':'onbekend'}-niveau${n.loc&&n.loc.bron?` (<span title="${esc(n.loc.bron)}">bron ⓘ</span>)`:''}. Beweeg over een regel voor details.</div></details>`}
 function card(v){const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null),t=v.price_thb??(v.price_eur&&D.eur_thb?v.price_eur*D.eur_thb:null);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 return `<div class="card ${v.top3?'top':''} ${esc(v.status)}"><div class="ph">${v.photo_url?`<img loading="lazy" src="${esc(v.photo_url)}" alt="">`:((v.type||'huis')==='resort'?'🏨':'🏡')}</div><div class="b">
 <div class="tags"><span class="st ${esc(v.status)}">${esc(v.status)}</span><span class="st ty">${(v.type||'huis')==='resort'?'🏨 resort':'🏡 huis'}</span></div><div class="n">${esc(v.name)}</div><div class="a">📍 ${esc(v.area)}${v.source?' · '+esc(v.source):''}</div>
 <div class="p">${e?eur(e):'?'} <small>/ maand ${t?'· '+thb(t):''}</small></div>
 <div class="tags"><span class="tag">🛏 ${v.bedrooms??'?'} slpk</span>${v.bathrooms?`<span class="tag">🛁 ${v.bathrooms}</span>`:''}<span class="tag">🏊 ${v.private_pool?'Privézwembad':'Geen privézwembad'}</span><span class="tag">📅 ${v.six_month_ok?'6 mnd kan'+(v.six_month_price_thb?' ('+thb(v.six_month_price_thb)+')':''):'Alleen 1 jaar'}</span>${v.beach_min!=null?`<span class="tag">🏖 ${v.beach_min} min</span>`:v.beach_km!=null?`<span class="tag">🏖 ${v.beach_km} km</span>`:'<span class="tag">🏖 ?</span>'}<span class="tag">📶 ${esc(v.internet||'?')}</span></div>
-<div class="notes">${esc(v.notes)}</div>${v.url?`<a class="l" href="${esc(v.url)}" target="_blank" rel="noopener">Bekijk advertentie →</a>`:''}</div></div>`}
+<div class="notes">${esc(v.notes)}</div>${nbBlock(v,esc)}${v.url?`<a class="l" href="${esc(v.url)}" target="_blank" rel="noopener">Bekijk advertentie →</a>`:''}</div></div>`}
 function render(){const u=D.updated_at?new Date(D.updated_at):null;document.getElementById('upd').textContent='Laatst bijgewerkt: '+(u?u.toLocaleString('nl-NL',{dateStyle:'long',timeStyle:'short'}):'onbekend');
 let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value,tv=ty.value;if(tv)vs=vs.filter(v=>(v.type||'huis')===tv);const mpv=+mp.value,bdv=+bd.value;if(mpv)vs=vs.filter(v=>{const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null);return e!=null&&e<=mpv});if(bdv)vs=vs.filter(v=>v.beach_min!=null?v.beach_min<=bdv:v.beach_km!=null?v.beach_km<=bdv*0.4:false);
+const nf=[['supermarkt',+sm.value],['ziekenhuis',+zh.value],['school',+sc.value]];for(const [c,m] of nf)if(m)vs=vs.filter(v=>{const d=near(v.id,c);return d!=null&&d<=m});
 if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
 const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
