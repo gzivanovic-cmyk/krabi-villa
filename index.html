@@ -63,7 +63,7 @@ let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value,tv=ty.value;if(tv)vs
 const nf=[['supermarkt',+sm.value],['ziekenhuis',+zh.value],['school',+sc.value],['yoga',+yo.value],['dans',+da.value],['gym',+gy.value]];for(const [c,m] of nf)if(m)vs=vs.filter(v=>{const d=near(v.id,c);return d!=null&&d<=m});
 if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
-const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
-document.getElementById('top').innerHTML=top.length?'<h2>⭐ Top 3</h2><div class="grid">'+top.map(card).join('')+'</div>':'';
+const hasTop=(D.villas||[]).some(v=>v.top3);const top=vs.filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
+document.getElementById('top').innerHTML=top.length?'<h2>⭐ Top 3</h2><div class="grid">'+top.map(card).join('')+'</div>':(hasTop?'<h2>⭐ Top 3</h2><div class="empty">Geen villa\'s binnen dit filter</div>':'');
 document.getElementById('all').innerHTML=(D.villas||[]).length?(tv==='resort'?'<h2>Resorts (':tv==='huis'?'<h2>Huizen (':'<h2>Alle villa\'s (')+vs.length+')</h2>'+(vs.length?'<div class="grid">'+vs.map(card).join('')+'</div>':'<div class="empty">Geen villa\'s gevonden met deze filters — probeer een ruimere afstand.</div>'):`<div class="empty">🌺 ${D.message||'De scout vult dit vanaf morgen dagelijks.'}</div>`}
 </script></body></html>
