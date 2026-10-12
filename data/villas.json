@@ -22,7 +22,9 @@
       "top3": true,
       "six_month_ok": true,
       "six_month_price_thb": 120000,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": 2
     },
     {
       "id": "dot-47d989eb",
@@ -43,7 +45,9 @@
       "top3": false,
       "six_month_ok": false,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": 8,
+      "beach_km": null
     },
     {
       "id": "faz-u1750678",
@@ -64,7 +68,9 @@
       "top3": false,
       "six_month_ok": false,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": null
     },
     {
       "id": "kbt-u6565250",
@@ -85,7 +91,9 @@
       "top3": false,
       "six_month_ok": false,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": null
     },
     {
       "id": "dot-3843d74b",
@@ -106,7 +114,9 @@
       "top3": false,
       "six_month_ok": false,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": null
     },
     {
       "id": "mdp-poolvilla-75k",
@@ -127,7 +137,9 @@
       "top3": true,
       "six_month_ok": true,
       "six_month_price_thb": 75000,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": null
     },
     {
       "id": "mdp-marigold-70k",
@@ -148,7 +160,9 @@
       "top3": true,
       "six_month_ok": true,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": 7,
+      "beach_km": null
     },
     {
       "id": "k4r-klongmuang-35k",
@@ -169,7 +183,9 @@
       "top3": false,
       "six_month_ok": true,
       "six_month_price_thb": null,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": 5,
+      "beach_km": null
     },
     {
       "id": "tgp-u6136868",
@@ -190,7 +206,9 @@
       "top3": false,
       "six_month_ok": true,
       "six_month_price_thb": 100000,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": null,
+      "beach_km": 3
     },
     {
       "id": "kgr-jampoon",
@@ -211,7 +229,9 @@
       "top3": false,
       "six_month_ok": true,
       "six_month_price_thb": 45000,
-      "type": "huis"
+      "type": "huis",
+      "beach_min": 5,
+      "beach_km": null
     },
     {
       "id": "tp-kr2178",
@@ -232,7 +252,9 @@
       "photo_url": "img/tp-kr2178.jpg",
       "source": "Thailand-Property (Klasana)",
       "score": 77,
-      "top3": false
+      "top3": false,
+      "beach_min": 5,
+      "beach_km": null
     },
     {
       "id": "kbt-u6261804",
@@ -253,7 +275,9 @@
       "photo_url": "img/kbt-u6261804.jpg",
       "source": "Kaibaanthai",
       "score": 75,
-      "top3": false
+      "top3": false,
+      "beach_min": 10,
+      "beach_km": null
     },
     {
       "id": "mdp-klongmuang-120k",
@@ -274,7 +298,9 @@
       "photo_url": null,
       "source": "Madame Property",
       "score": 64,
-      "top3": false
+      "top3": false,
+      "beach_min": 10,
+      "beach_km": null
     }
   ]
 }
