@@ -32,7 +32,7 @@ h2{color:var(--g);margin:18px 0 8px}
 <select id="zh"><option value="">Ziekenhuis: elke afstand</option><option value="5">Ziekenhuis ≤ 5 km</option><option value="10">Ziekenhuis ≤ 10 km</option><option value="20">Ziekenhuis ≤ 20 km</option></select>
 <select id="sc"><option value="">School: elke afstand</option><option value="5">School ≤ 5 km</option><option value="10">School ≤ 10 km</option></select>
 <select id="yo"><option value="">Yoga: elke afstand</option><option value="2">Yoga ≤ 2 km</option><option value="5">Yoga ≤ 5 km</option><option value="10">Yoga ≤ 10 km</option></select>
-<select id="da"><option value="">Dansschool: elke afstand</option><option value="2">Dansschool ≤ 2 km</option><option value="5">Dansschool ≤ 5 km</option><option value="10">Dansschool ≤ 10 km</option></select>
+<select id="da"><option value="">Dansschool: elke afstand</option><option value="2">Dansschool ≤ 2 km</option><option value="5">Dansschool ≤ 5 km</option><option value="10">Dansschool ≤ 10 km</option><option value="20">Dansschool ≤ 20 km</option><option value="25">Dansschool ≤ 25 km</option></select>
 <select id="gy"><option value="">Sportschool: elke afstand</option><option value="2">Sportschool ≤ 2 km</option><option value="5">Sportschool ≤ 5 km</option><option value="10">Sportschool ≤ 10 km</option></select>
 <select id="f"><option value="">Alle statussen</option><option value="act">Zonder afgevallen</option><option>nieuw</option><option>shortlist</option><option>bezichtigen</option><option>afgevallen</option></select>
 </div>
@@ -65,5 +65,5 @@ if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
 const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
 document.getElementById('top').innerHTML=top.length?'<h2>⭐ Top 3</h2><div class="grid">'+top.map(card).join('')+'</div>':'';
-document.getElementById('all').innerHTML=(D.villas||[]).length?(tv==='resort'?'<h2>Resorts (':tv==='huis'?'<h2>Huizen (':'<h2>Alle villa\'s (')+vs.length+')</h2><div class="grid">'+vs.map(card).join('')+'</div>':`<div class="empty">🌺 ${D.message||'De scout vult dit vanaf morgen dagelijks.'}</div>`}
+document.getElementById('all').innerHTML=(D.villas||[]).length?(tv==='resort'?'<h2>Resorts (':tv==='huis'?'<h2>Huizen (':'<h2>Alle villa\'s (')+vs.length+')</h2>'+(vs.length?'<div class="grid">'+vs.map(card).join('')+'</div>':'<div class="empty">Geen villa\'s gevonden met deze filters — probeer een ruimere afstand.</div>'):`<div class="empty">🌺 ${D.message||'De scout vult dit vanaf morgen dagelijks.'}</div>`}
 </script></body></html>
