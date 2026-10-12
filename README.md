@@ -12,6 +12,7 @@ Top-level:
   - `bedrooms`, `bathrooms` (number|null)
   - `private_pool` (bool)
   - `six_month_ok` (bool) – 6-maandscontract mogelijk · `six_month_price_thb` (number|null) – maandprijs bij 6 maanden
+  - `beach_min` (number|null) – minuten naar dichtstbijzijnde strand zoals in advertentie · `beach_km` (number|null) – als alleen km bekend is
   - `internet` (string)
   - `notes` (string, Nederlands)
   - `type`: `huis` | `resort` (filter op de site; ontbreekt = huis)

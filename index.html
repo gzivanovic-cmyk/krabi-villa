@@ -25,6 +25,8 @@ h2{color:var(--g);margin:18px 0 8px}
 <header><h1>🌴 Onze villa in Krabi</h1><p id="upd">Laden…</p></header>
 <main><div class="bar"><select id="sort"><option value="score">Beste match</option><option value="pa">Prijs laag → hoog</option><option value="pd">Prijs hoog → laag</option></select>
 <select id="ty"><option value="">Huizen &amp; resorts</option><option value="huis">🏡 Alleen huizen</option><option value="resort">🏨 Alleen resorts</option></select>
+<select id="mp"><option value="">Elke prijs</option><option value="1500">Tot € 1.500</option><option value="2000">Tot € 2.000</option><option value="2500">Tot € 2.500</option><option value="3000">Tot € 3.000</option></select>
+<select id="bd"><option value="">Elke afstand tot strand</option><option value="5">Strand ≤ 5 min (of ≤ 2 km)</option><option value="10">Strand ≤ 10 min (of ≤ 4 km)</option></select>
 <select id="f"><option value="">Alle statussen</option><option value="act">Zonder afgevallen</option><option>nieuw</option><option>shortlist</option><option>bezichtigen</option><option>afgevallen</option></select>
 </div>
 <div id="top"></div><div id="all"></div></main>
@@ -32,16 +34,16 @@ h2{color:var(--g);margin:18px 0 8px}
 <script>
 const eur=n=>'€ '+Math.round(n).toLocaleString('nl-NL'),thb=n=>'฿ '+Math.round(n).toLocaleString('nl-NL');
 let D;fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
-['sort','f','ty'].forEach(i=>document.getElementById(i).onchange=render);
+['sort','f','ty','mp','bd'].forEach(i=>document.getElementById(i).onchange=render);
 function card(v){const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null),t=v.price_thb??(v.price_eur&&D.eur_thb?v.price_eur*D.eur_thb:null);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 return `<div class="card ${v.top3?'top':''} ${esc(v.status)}"><div class="ph">${v.photo_url?`<img loading="lazy" src="${esc(v.photo_url)}" alt="">`:((v.type||'huis')==='resort'?'🏨':'🏡')}</div><div class="b">
 <div class="tags"><span class="st ${esc(v.status)}">${esc(v.status)}</span><span class="st ty">${(v.type||'huis')==='resort'?'🏨 resort':'🏡 huis'}</span></div><div class="n">${esc(v.name)}</div><div class="a">📍 ${esc(v.area)}${v.source?' · '+esc(v.source):''}</div>
 <div class="p">${e?eur(e):'?'} <small>/ maand ${t?'· '+thb(t):''}</small></div>
-<div class="tags"><span class="tag">🛏 ${v.bedrooms??'?'} slpk</span>${v.bathrooms?`<span class="tag">🛁 ${v.bathrooms}</span>`:''}<span class="tag">🏊 ${v.private_pool?'Privézwembad':'Geen privézwembad'}</span><span class="tag">📅 ${v.six_month_ok?'6 mnd kan'+(v.six_month_price_thb?' ('+thb(v.six_month_price_thb)+')':''):'Alleen 1 jaar'}</span><span class="tag">📶 ${esc(v.internet||'?')}</span></div>
+<div class="tags"><span class="tag">🛏 ${v.bedrooms??'?'} slpk</span>${v.bathrooms?`<span class="tag">🛁 ${v.bathrooms}</span>`:''}<span class="tag">🏊 ${v.private_pool?'Privézwembad':'Geen privézwembad'}</span><span class="tag">📅 ${v.six_month_ok?'6 mnd kan'+(v.six_month_price_thb?' ('+thb(v.six_month_price_thb)+')':''):'Alleen 1 jaar'}</span>${v.beach_min!=null?`<span class="tag">🏖 ${v.beach_min} min</span>`:v.beach_km!=null?`<span class="tag">🏖 ${v.beach_km} km</span>`:'<span class="tag">🏖 ?</span>'}<span class="tag">📶 ${esc(v.internet||'?')}</span></div>
 <div class="notes">${esc(v.notes)}</div>${v.url?`<a class="l" href="${esc(v.url)}" target="_blank" rel="noopener">Bekijk advertentie →</a>`:''}</div></div>`}
 function render(){const u=D.updated_at?new Date(D.updated_at):null;document.getElementById('upd').textContent='Laatst bijgewerkt: '+(u?u.toLocaleString('nl-NL',{dateStyle:'long',timeStyle:'short'}):'onbekend');
-let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value,tv=ty.value;if(tv)vs=vs.filter(v=>(v.type||'huis')===tv);
+let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value,tv=ty.value;if(tv)vs=vs.filter(v=>(v.type||'huis')===tv);const mpv=+mp.value,bdv=+bd.value;if(mpv)vs=vs.filter(v=>{const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null);return e!=null&&e<=mpv});if(bdv)vs=vs.filter(v=>v.beach_min!=null?v.beach_min<=bdv:v.beach_km!=null?v.beach_km<=bdv*0.4:false);
 if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
 const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
