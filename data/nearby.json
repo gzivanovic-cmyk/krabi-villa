@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-12T19:57:12+02:00",
+ "updated_at": "2026-10-12T20:00:45+02:00",
  "villas": {
   "kbt-u6774150": {
    "loc": {
@@ -3630,6 +3630,233 @@
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.075768,98.914122",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    }
+   ]
+  },
+  "faz-u1750678": {
+   "loc": {
+    "lat": 8.054957,
+    "lng": 98.810921,
+    "precisie": "soi",
+    "bron": "advertentie noemt project \"Ao Nang Garden Villa\" (Soi Nopparat Thara 8); coordinaten van het project, villa zelf niet exact"
+   },
+   "items": [
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 10.0,
+     "min": 18,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Aonang Muay Thai Boxing Stadium and Gym",
+     "km": 1.4,
+     "min": 3,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.046161,98.813312",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 3.6,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "Suwanna Pharma (apotheek)",
+     "km": 1.0,
+     "min": 2,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.050948,98.807339",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "S.Y. Pharmacy (apotheek)",
+     "km": 4.3,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.035006,98.819139",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "De Care Pharmacy (apotheek)",
+     "km": 4.4,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.034340,98.818812",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "restaurant",
+     "name": "Mr. Kai Esanfood Thaifood Seafood",
+     "km": 0.6,
+     "min": 8,
+     "mode": "lopen",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.050554,98.811966",
+     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "restaurant",
+     "name": "Panda Seafood buffet",
+     "km": 0.7,
+     "min": 9,
+     "mode": "lopen",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.051645,98.810372",
+     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "โรงเรียนบ้านคลองแห้ง",
+     "km": 1.1,
+     "min": 2,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.052263,98.808134",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "โรงเรียนบ้านช่องพลี",
+     "km": 4.9,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.077118,98.828699",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "โรงเรียนอนุบาลหนองทะเล",
+     "km": 5.8,
+     "min": 10,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.094779,98.808594",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "หาดนพรัตน์ธารา",
+     "km": 2.7,
+     "min": 4,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.043292,98.808779",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "หาดอ่าวนาง",
+     "km": 4.9,
+     "min": 6,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.031092,98.821883",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "Pan Beach",
+     "km": 6.5,
+     "min": 14,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.043925,98.782699",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "Mother Marche",
+     "km": 0.7,
+     "min": 9,
+     "mode": "lopen",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.050667,98.813028",
+     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "Super Cheap",
+     "km": 2.4,
+     "min": 3,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.059412,98.821533",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "Sanit",
+     "km": 3.0,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.039878,98.819729",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "winkel",
+     "name": "7-Eleven",
+     "km": 0.7,
+     "min": 9,
+     "mode": "lopen",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.050199,98.812617",
+     "note": "OSRM rijroute; looptijd geschat 4,5 km/u; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "winkel",
+     "name": "7-Eleven",
+     "km": 1.3,
+     "min": 2,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.052057,98.816004",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "yoga",
+     "name": "Marina yoga and Reiki",
+     "km": 6.2,
+     "min": 9,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.058254,98.846714",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "yoga",
+     "name": "Nara Yoga",
+     "km": 8.7,
+     "min": 10,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.083085,98.864541",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Wattanapat hospital ao nang",
+     "km": 1.9,
+     "min": 4,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.056424,98.817382",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Krabi Nakharin International Hospital (Krabi Town)",
+     "km": 14.3,
+     "min": 17,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.080798,98.905819",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Krabi Hospital (overheid, Krabi Town)",
+     "km": 16.5,
+     "min": 21,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.075768,98.914122",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
     }
    ]
   }
