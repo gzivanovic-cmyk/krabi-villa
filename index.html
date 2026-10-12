@@ -6,7 +6,7 @@
 header{background:linear-gradient(135deg,#1f6f5c,#2fa08a);color:#fff;padding:28px 18px 22px;text-align:center}
 h1{margin:0;font-size:1.9rem}header p{margin:6px 0 0;opacity:.9}
 main{max-width:1100px;margin:auto;padding:16px}
-.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}select,button{padding:8px 12px;border-radius:20px;border:1px solid #ccb;background:#fff;font-size:.95rem}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}.bar select{max-width:100%;min-width:0}@media(max-width:600px){.bar{display:grid;grid-template-columns:1fr 1fr}.bar select{width:100%;font-size:.85rem;padding:7px 8px}}body{overflow-x:hidden}.nb a{word-break:break-word}select,button{padding:8px 12px;border-radius:20px;border:1px solid #ccb;background:#fff;font-size:.95rem}
 h2{color:var(--g);margin:18px 0 8px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 10px #0001;display:flex;flex-direction:column}
@@ -31,6 +31,9 @@ h2{color:var(--g);margin:18px 0 8px}
 <select id="sm"><option value="">Supermarkt: elke afstand</option><option value="2">Supermarkt ≤ 2 km</option><option value="5">Supermarkt ≤ 5 km</option></select>
 <select id="zh"><option value="">Ziekenhuis: elke afstand</option><option value="5">Ziekenhuis ≤ 5 km</option><option value="10">Ziekenhuis ≤ 10 km</option><option value="20">Ziekenhuis ≤ 20 km</option></select>
 <select id="sc"><option value="">School: elke afstand</option><option value="5">School ≤ 5 km</option><option value="10">School ≤ 10 km</option></select>
+<select id="yo"><option value="">Yoga: elke afstand</option><option value="2">Yoga ≤ 2 km</option><option value="5">Yoga ≤ 5 km</option><option value="10">Yoga ≤ 10 km</option></select>
+<select id="da"><option value="">Dansschool: elke afstand</option><option value="2">Dansschool ≤ 2 km</option><option value="5">Dansschool ≤ 5 km</option><option value="10">Dansschool ≤ 10 km</option></select>
+<select id="gy"><option value="">Sportschool: elke afstand</option><option value="2">Sportschool ≤ 2 km</option><option value="5">Sportschool ≤ 5 km</option><option value="10">Sportschool ≤ 10 km</option></select>
 <select id="f"><option value="">Alle statussen</option><option value="act">Zonder afgevallen</option><option>nieuw</option><option>shortlist</option><option>bezichtigen</option><option>afgevallen</option></select>
 </div>
 <div id="top"></div><div id="all"></div></main>
@@ -39,11 +42,12 @@ h2{color:var(--g);margin:18px 0 8px}
 const eur=n=>'€ '+Math.round(n).toLocaleString('nl-NL'),thb=n=>'฿ '+Math.round(n).toLocaleString('nl-NL');
 let D,NB={};fetch('data/nearby.json?'+Date.now()).then(r=>r.ok?r.json():{}).then(n=>{NB=(n&&n.villas)||{};if(D)render()}).catch(()=>{});
 fetch('data/villas.json?'+Date.now()).then(r=>r.json()).then(d=>{D=d;render()}).catch(()=>{document.getElementById('upd').textContent='Kon gegevens niet laden'});
-['sort','f','ty','mp','bd','sm','zh','sc'].forEach(i=>document.getElementById(i).onchange=render);
-const CATS=[['strand','🏖 Strand'],['supermarkt','🛒 Supermarkt'],['ziekenhuis','🏥 Ziekenhuis'],['school','🎒 School'],['restaurant','🍽 Restaurant'],['gym','🏋 Gym'],['yoga','🧘 Yoga'],['dans','💃 Dans'],['winkel','🛍 Winkel'],['overig','📌 Overig']];
+['sort','f','ty','mp','bd','sm','zh','sc','yo','da','gy'].forEach(i=>document.getElementById(i).onchange=render);
+const CATS=[['strand','🏖 Strand'],['supermarkt','🛒 Supermarkt'],['ziekenhuis','🏥 Ziekenhuis'],['school','🎒 School'],['kinderen','🧒 Kinderen (zwemles/vechtsport)'],['restaurant','🍽 Restaurant'],['gym','🏋 Gym'],['yoga','🧘 Yoga'],['dans','💃 Dans'],['winkel','🛍 Winkel'],['overig','📌 Overig']];
 const near=(id,c)=>{const n=NB[id];if(!n||!n.items)return null;const k=n.items.filter(i=>i.cat===c&&i.km!=null).map(i=>+i.km);return k.length?Math.min(...k):null};
 function nbBlock(v,esc){const n=NB[v.id];if(!n||!(n.items||[]).length)return '';const it=n.items;let h='';
-for(const [c,l] of CATS){const g=it.filter(i=>i.cat===c).sort((a,b)=>(a.km??1e9)-(b.km??1e9)).slice(0,3);if(!g.length)continue;
+const ex=[...new Set(it.map(i=>i.cat).filter(c=>c&&!CATS.some(x=>x[0]===c)))].map(c=>[c,'📌 '+esc(c[0].toUpperCase()+c.slice(1))]);
+for(const [c,l] of CATS.concat(ex)){const g=it.filter(i=>i.cat===c).sort((a,b)=>(a.km??1e9)-(b.km??1e9)).slice(0,3);if(!g.length)continue;
 h+=`<div class="c"><b>${l}</b><ul>`+g.map(i=>{const u=i.maps||i.url;const nm=u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(i.name)}</a>`:esc(i.name);
 return `<li${i.note?` title="${esc(i.note)}"`:''}>${nm} · ${i.km!=null?String(i.km).replace('.',',')+' km':'? km'}${i.min!=null?' · '+i.min+' min':''}${i.mode?' '+esc(i.mode):''}</li>`}).join('')+'</ul></div>'}
 const pr=n.loc&&n.loc.precisie;return `<details class="nb"><summary>📍 In de buurt</summary>${h}<div class="x">Afstanden zijn indicatief: villa-locatie is benaderd op ${pr==='soi'?'straat (soi)':pr==='wijk'?'wijk':'onbekend'}-niveau${n.loc&&n.loc.bron?` (<span title="${esc(n.loc.bron)}">bron ⓘ</span>)`:''}. Beweeg over een regel voor details.</div></details>`}
@@ -56,7 +60,7 @@ return `<div class="card ${v.top3?'top':''} ${esc(v.status)}"><div class="ph">${
 <div class="notes">${esc(v.notes)}</div>${nbBlock(v,esc)}${v.url?`<a class="l" href="${esc(v.url)}" target="_blank" rel="noopener">Bekijk advertentie →</a>`:''}</div></div>`}
 function render(){const u=D.updated_at?new Date(D.updated_at):null;document.getElementById('upd').textContent='Laatst bijgewerkt: '+(u?u.toLocaleString('nl-NL',{dateStyle:'long',timeStyle:'short'}):'onbekend');
 let vs=(D.villas||[]).slice();const s=sort.value,fv=f.value,tv=ty.value;if(tv)vs=vs.filter(v=>(v.type||'huis')===tv);const mpv=+mp.value,bdv=+bd.value;if(mpv)vs=vs.filter(v=>{const e=v.price_eur??(v.price_thb&&D.eur_thb?v.price_thb/D.eur_thb:null);return e!=null&&e<=mpv});if(bdv)vs=vs.filter(v=>v.beach_min!=null?v.beach_min<=bdv:v.beach_km!=null?v.beach_km<=bdv*0.4:false);
-const nf=[['supermarkt',+sm.value],['ziekenhuis',+zh.value],['school',+sc.value]];for(const [c,m] of nf)if(m)vs=vs.filter(v=>{const d=near(v.id,c);return d!=null&&d<=m});
+const nf=[['supermarkt',+sm.value],['ziekenhuis',+zh.value],['school',+sc.value],['yoga',+yo.value],['dans',+da.value],['gym',+gy.value]];for(const [c,m] of nf)if(m)vs=vs.filter(v=>{const d=near(v.id,c);return d!=null&&d<=m});
 if(fv==='act')vs=vs.filter(v=>v.status!=='afgevallen');else if(fv)vs=vs.filter(v=>v.status===fv);
 const P=v=>v.price_eur??(v.price_thb/(D.eur_thb||37));vs.sort(s==='pa'?(a,b)=>P(a)-P(b):s==='pd'?(a,b)=>P(b)-P(a):(a,b)=>(b.score||0)-(a.score||0));
 const top=(D.villas||[]).filter(v=>v.top3).sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
