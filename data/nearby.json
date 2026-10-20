@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-19T08:24:26+02:00",
+ "updated_at": "2026-10-20T08:12:30+02:00",
  "villas": {
   "kbt-u6774150": {
    "loc": {
@@ -15016,6 +15016,394 @@
      "mode": "auto",
      "url": "https://www.google.com/maps/search/?api=1&query=8.075768,98.914122",
      "note": "OSRM rijroute; villa-ligging wijk-niveau"
+    }
+   ]
+  },
+  "kbt-u6872822": {
+   "loc": {
+    "lat": 8.0693978,
+    "lng": 98.8586752,
+    "precisie": "soi",
+    "bron": "kaartpin in advertentie (portal-pin, mogelijk afgerond)"
+   },
+   "items": [
+    {
+     "cat": "coworking",
+     "name": "KLW Coworking Coliving Workspace (Areeya Phu Beach Resort)",
+     "km": 5.1,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.073893,98.836775",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "coworking",
+     "name": "Jungle Coworking (Ao Nang)",
+     "km": 10.1,
+     "min": 11,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.032500,98.819000",
+     "note": "coordinaten uit gids (afgerond); OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "dans",
+     "name": "Little Black Studio – dance & performance art (Krabi Town)",
+     "km": 8.9,
+     "min": 10,
+     "mode": "auto",
+     "url": "https://www.facebook.com/profile.php?id=61556433585958",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.066726,98.907965",
+     "note": "dansstudio; 48/22 Pak Nam; aanbod voor kinderen niet vermeld; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "dans",
+     "name": "SDA Dance of Arts School by KruEve (Krabi Town)",
+     "km": 9.7,
+     "min": 12,
+     "mode": "auto",
+     "url": "https://m.facebook.com/profile.php?mibextid=LQQJ4d",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.067352,98.912025",
+     "note": "dansschool; 223/42 Maharaj Rd, Pak Nam; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Yaksha Fitness (Ao Nang)",
+     "km": 2.8,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.058940,98.852690",
+     "sub": [
+      "fitness"
+     ],
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "E.N. Muaythai Gym (Ao Nang)",
+     "km": 3.2,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://enmuaythaigym.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "sub": [
+      "muaythai"
+     ],
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "gym",
+     "name": "Heroic Fitness",
+     "km": 9.7,
+     "min": 12,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.040505,98.818781",
+     "sub": [
+      "fitness",
+      "crossfit"
+     ],
+     "note": "crossfit-stijl training/uitrusting volgens reviews en Tripadvisor; geen officiële CrossFit-affiliate; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "kinderen",
+     "name": "E.N. Muaythai Gym – kids Muay Thai (Ao Nang)",
+     "km": 3.2,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://enmuaythaigym.com/training/kids/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "note": "vechtsport kinderen; kidstraining op aanvraag, 50% korting; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "kinderen",
+     "name": "The Kick Taekwondo Krabi – taekwondo (Krabi Town)",
+     "km": 7.8,
+     "min": 9,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.076475,98.905062",
+     "note": "vechtsport; reviews noemen kinderlessen; di–vr 17–20, za–zo 14–20; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "BanyaYodkaew.Pharmacy (บ้านยายอดแก้ว ไสไทย Pharmacy) (apotheek)",
+     "km": 2.6,
+     "min": 3,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.082555,98.863202",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "Sai Thai Subdistrict Health Promoting Hospital (โรงพยาบาลส่งเสริมสุขภาพตำบล ไสไทย) (kliniek)",
+     "km": 2.6,
+     "min": 3,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.083506,98.866846",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "overig",
+     "name": "Chong Phli Subdistrict Health Promoting Hospital (โรงพยาบาลส่งเสริมสุขภาพตำบล ช่องพลี) (kliniek)",
+     "km": 4.9,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.077056,98.830833",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "restaurant",
+     "name": "Ya's restaurant and cookery school",
+     "km": 3.7,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.047091,98.852346",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "restaurant",
+     "name": "Hello Blue monkey",
+     "km": 3.9,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.038710,98.860087",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Rongrian Ban Sai Thai (โรงเรียนบ้านไสไทย)",
+     "km": 1.8,
+     "min": 2,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.081876,98.858919",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Rongrian Ban Chong Phli (โรงเรียนบ้านช่องพลี)",
+     "km": 4.7,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.077118,98.828699",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Klong Jilad Municipal 2 School (โรงเรียนเทศบาล 2 (คลองจิหลาด))",
+     "km": 6.3,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.083351,98.893613",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "school",
+     "name": "Krabi International School (Nong Thale)",
+     "km": 12.2,
+     "min": 17,
+     "mode": "auto",
+     "url": "https://www.krabiinternationalschool.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.115183,98.783014",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "Ao Nang Beach (หาดอ่าวนาง)",
+     "km": 9.8,
+     "min": 11,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.031092,98.821883",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "Noppharat Thara Beach (หาดนพรัตน์ธารา)",
+     "km": 10.5,
+     "min": 11,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.043292,98.808779",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "strand",
+     "name": "Pan Beach",
+     "km": 14.5,
+     "min": 21,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.043925,98.782699",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "Mother Marché",
+     "km": 1.5,
+     "min": 2,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.078380,98.854383",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "Super Cheap",
+     "km": 3.3,
+     "min": 4,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.081386,98.871170",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "supermarkt",
+     "name": "7-Eleven (6.7 km)",
+     "km": 6.7,
+     "min": 8,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.082719,98.893570",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tandarts",
+     "name": "The Ivory Dental Clinic (Ao Nang)",
+     "km": 4.2,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.035410,98.861820",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tandarts",
+     "name": "Dental Box Dental Clinic Aonang",
+     "km": 9.0,
+     "min": 10,
+     "mode": "auto",
+     "url": "http://www.facebook.com/dentalboxdentalclinic",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.033871,98.828149",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tandarts",
+     "name": "Dental Box Krabi (Maharaj Rd, Krabi Town)",
+     "km": 10.3,
+     "min": 12,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.066820,98.915640",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tieners",
+     "name": "E.N. Muaythai Gym – Muay Thai jeugd (Ao Nang)",
+     "km": 3.2,
+     "min": 5,
+     "mode": "auto",
+     "url": "https://enmuaythaigym.com/training/kids/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.056296,98.849217",
+     "note": "Muay Thai; kinderen/tieners op aanvraag; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tieners",
+     "name": "Honour Muay Thai – Muay Thai alle niveaus (Ao Nang)",
+     "km": 4.5,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://honourmuaythai.com/",
+     "maps": "https://www.google.com/maps/search/?api=1&query=8.045460,98.852060",
+     "note": "Muay Thai; geen apart jeugdteam vermeld, 13+ navragen; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tieners",
+     "name": "Ao Nang Great Soccer – kunstgrasvelden",
+     "km": 5.3,
+     "min": 8,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.063328,98.840285",
+     "note": "voetbal; 2 velden, toernooien in het weekend; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tieners",
+     "name": "Kon-Tiki Krabi – PADI-duikschool & snorkelen",
+     "km": 5.6,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.058961,98.840434",
+     "note": "PADI 5* IDC; duik- en snorkeltrips; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "tieners",
+     "name": "Ao Nang Ripple SUP school + verhuur",
+     "km": 8.7,
+     "min": 10,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.035205,98.830576",
+     "note": "SUP-les en -verhuur; OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "winkel",
+     "name": "7-Eleven (3.6 km)",
+     "km": 3.6,
+     "min": 4,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.079653,98.856263",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "winkel",
+     "name": "7-Eleven (4.3 km)",
+     "km": 4.3,
+     "min": 4,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.075145,98.831729",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "yoga",
+     "name": "Nara Yoga",
+     "km": 2.3,
+     "min": 3,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.083085,98.864541",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "yoga",
+     "name": "Marina yoga and Reiki",
+     "km": 3.3,
+     "min": 7,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.058254,98.846714",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "yoga",
+     "name": "Tree D Yoga Aonang",
+     "km": 6.3,
+     "min": 8,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.055550,98.837390",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Wattanapat hospital ao nang",
+     "km": 7.3,
+     "min": 8,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.056424,98.817382",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Krabi Nakharin International Hospital (โรงพยาบาลกระบี่นครินทร์ อินเตอร์เนชั่นแนล)",
+     "km": 7.9,
+     "min": 10,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.080798,98.905819",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
+    },
+    {
+     "cat": "ziekenhuis",
+     "name": "Krabi Hospital (โรงพยาบาลกระบี่)",
+     "km": 9.8,
+     "min": 11,
+     "mode": "auto",
+     "url": "https://www.google.com/maps/search/?api=1&query=8.075864,98.915206",
+     "note": "OSRM rijroute; villa-ligging soi-niveau"
     }
    ]
   }
